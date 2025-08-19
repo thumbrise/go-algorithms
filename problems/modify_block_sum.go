@@ -5,7 +5,7 @@ func modifyBlocksSum(data []byte) int {
 		return 0
 	}
 	j := 0
-	const modularo int = 256
+
 	var count = 1
 	for i := 1; i <= len(data); i++ {
 		if i < len(data) && data[i] == data[i-1] {
@@ -23,5 +23,6 @@ func modifyBlocksSum(data []byte) int {
 			count = 1
 		}
 	}
+
 	return j
 }
